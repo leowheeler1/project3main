@@ -7,7 +7,7 @@
         - What demographics are most impacted by anxiety and depression?
         - What trends exist between states?
         - How do the areas most impacted by COVID cases and anxiety/depression compare?
-    - We decided to use an API and grab a JSON response for the initial data and converted that into a .csv file, which was then converted into a PostgresQL database. In addition to this, we have a README.md file which contains a content overview, we used Github Pages to make an interactive set of visualizations,  and Javascript as well as HTML/CSS to run these visualizations. Last but not least we also decided to use Highcharts, Leaflet, and Postgres.js to further increase the power of our visualizations as well as run the information from our database to our interactive visualizations.
+    - We decided to use an API and grab a JSON response for the initial data and converted that into a .csv file, which was then converted into a PostgresQL database. In addition to this, we have a README.md file which contains a content overview, we used Github Pages to make an interactive set of visualizations,  and Javascript as well as HTML/CSS to run these visualizations. Psycopg2 was used to take information from PostgresQL to our interactive visualizations. Last but not least we also decided to use Highcharts and Leaflet to further increase the power of our visualizations.
     - Overall, this data analytics project is condensed by its work: we extracted the data from various websites cited in References, transformed it into a SQL database, and then loaded it into Javascript/HTML/CSS powered interactive visualizations to increase ease of access for client side usage.
 
 - Instructions
