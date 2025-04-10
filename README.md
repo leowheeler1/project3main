@@ -13,7 +13,7 @@
 - Instructions
 
 - Ethical Considerations
-    - For this project, we used data from the CDC. We ourselves are not interfering with any end user licensing agreements nor are we stealing data that we should not have access to. This data has been sourced ethically from public spaces and is used for educational purposes. 
+    - For this project, we used data from the CDC. We ourselves are not interfering with any end user licensing agreements nor are we stealing data that we should not have access to. This data has been sourced ethically from public spaces and is being used for educational purposes. 
     - Additionally notable are the CDC Guidelines for Data Sharing and Collections, cited in Other References. The CDC follows ten principles that bolster 5 standards to keep their data practices sharp and up to code. They are:
         -Public health data should be acquired, used, disclosed, and stored for legitimate public health purposes.
         - Programs should collect the minimum amount of personally identifiable information necessary to conduct public health activities.
@@ -27,7 +27,7 @@
         - Program officials should be active, responsible stewards of public health data.
 
     - In conclusion, this data is ethically sourced and maintained.
-    
+
 - References (Data)
     - National Center for Health Statistics. Provisional COVID-19 Death Counts by Week Ending Date and State. Date accessed: April 7, 2025
         - https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Week-Ending-D/r8kw-7aab/data_preview
