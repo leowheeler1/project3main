@@ -1,4 +1,4 @@
-fetch('data/json/state_death_totals.json')
+fetch('../../data/json/state_death_totals.json')
     .then(response => response.json())
     .then(data => {
         const trace1 = {
