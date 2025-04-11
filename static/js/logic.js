@@ -21,7 +21,7 @@ let AgeGroups = [
     // Data for the selected age group
     let barOutline = {
       x: [selectedAgeGroup], 
-      y: [selectedValue], 
+      y: [selectedValue],  
       type: "bar",
       orientation: "v",
       marker: {
@@ -37,7 +37,7 @@ let AgeGroups = [
         tickvals: AgeGroups, 
       },
       yaxis: { 
-        title: "Symptom Score",
+        title: "Score",
         range: [0, 100] 
       }
     };
