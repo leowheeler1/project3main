@@ -39,7 +39,9 @@ let AgeGroups = [
       yaxis: { 
         title: "Score",
         range: [0, 100] 
-      }
+      },
+      bargap: 0.1, 
+      bargroupgap: 0.1 
     };
   
     // Render the Bar Chart
