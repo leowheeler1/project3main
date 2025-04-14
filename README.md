@@ -7,8 +7,7 @@
       - What demographics are most impacted by anxiety and depression?
       - What trends exist between states?
       - How do the areas most impacted by COVID cases and anxiety/depression compare?
-  - We decided to use an API and convert a JSON response for the initial data and converted that into a .csv file, which was then converted into a PostgresQL database. In addition to this, we have a README.md file which contains a content overview, we used Github Pages to make an interactive set of visualizations,  and Javascript as well as HTML/CSS to run these visualizations. Psycopg2 was used to take information from PostgresQL through Python into a JSON to our interactive visualizations. Last but not least we also decided to use D3 and Plotly to further increase the power of our visualizations.
-  - Overall, this data analytics project is condensed by its work: we extracted the data from various websites cited in References, transformed it into a SQL database, and then loaded it into Javascript/HTML/CSS powered interactive visualizations to increase ease of access for client side usage.
+  - We decided to use an API to call for the initial data from the CDC. That data went through a cleaning process and was then converted  into a .csv file, which was then loaded into a PostgresQL database. Github Pages was leveraged to host the interactive visualizations that resulted from our study. Javascript as well as HTML/CSS were used to run these visualizations. Psycopg2 was used to take information from PostgresQL into Python to further refine into JSON objects for our interactive visualizations. Last but not least we used D3 and Plotly to further increase the power of our visualizations.
 
 ## Instructions
 
@@ -26,7 +25,7 @@
       - Minimize the number of persons and entities granted access to identifiable data.
       - Program officials should be active, responsible stewards of public health data.
 
-  - In conclusion, this data is ethically sourced and maintained.
+  - Since the data is accessible through a public API, contains no sensitive information about any individuals, and this is a study on correlation between COVID-19 and mental health, this is an ethical source of data and is being used as intended. 
 
 ## References (Data)
   - National Center for Health Statistics. Provisional COVID-19 Death Counts by Week Ending Date and State. Date accessed: April 7, 2025
