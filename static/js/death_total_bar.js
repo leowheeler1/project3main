@@ -2,7 +2,7 @@ let tickvals = [];
 let tickmode = "array"
 
 
-fetch('project3main/data/json/state_death_totals.json')
+fetch('./data/json/state_death_totals.json')
     .then(response => response.json())
     .then(data => {
         for (i=0; i < data.length; i++) {
@@ -58,7 +58,7 @@ fetch('project3main/data/json/state_death_totals.json')
     .catch(error => console.error('Error loading data:', error));
 
 
-fetch('project3main/data/json/high_death.json')
+fetch('./data/json/high_death.json')
     .then(response => response.json())
     .then(data => {
         const trace1 = {
@@ -102,7 +102,7 @@ fetch('project3main/data/json/high_death.json')
     .catch(error => console.error('Error loading data: ', error))
 
 
-    fetch('project3main/data/json/higher_covid.json')
+    fetch('./data/json/higher_covid.json')
     .then(response => response.json())
     .then(data => {
         const trace1 = {
