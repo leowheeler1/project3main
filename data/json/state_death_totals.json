@@ -1,0 +1,267 @@
+[
+    {
+        "state": "Alabama",
+        "covid_d": 90917.0,
+        "pneum_d": 89149.0
+    },
+    {
+        "state": "Alaska",
+        "covid_d": 5733.0,
+        "pneum_d": 6320.0
+    },
+    {
+        "state": "Arizona",
+        "covid_d": 127742.0,
+        "pneum_d": 145962.0
+    },
+    {
+        "state": "Arkansas",
+        "covid_d": 53697.0,
+        "pneum_d": 68841.0
+    },
+    {
+        "state": "California",
+        "covid_d": 464789.0,
+        "pneum_d": 629466.0
+    },
+    {
+        "state": "Colorado",
+        "covid_d": 66208.0,
+        "pneum_d": 75138.0
+    },
+    {
+        "state": "Connecticut",
+        "covid_d": 53587.0,
+        "pneum_d": 57414.0
+    },
+    {
+        "state": "Delaware",
+        "covid_d": 14644.0,
+        "pneum_d": 17930.0
+    },
+    {
+        "state": "District of Columbia",
+        "covid_d": 8746.0,
+        "pneum_d": 13665.0
+    },
+    {
+        "state": "Florida",
+        "covid_d": 349188.0,
+        "pneum_d": 484421.0
+    },
+    {
+        "state": "Georgia",
+        "covid_d": 154436.0,
+        "pneum_d": 167225.0
+    },
+    {
+        "state": "Hawaii",
+        "covid_d": 8178.0,
+        "pneum_d": 19525.0
+    },
+    {
+        "state": "Idaho",
+        "covid_d": 23439.0,
+        "pneum_d": 23734.0
+    },
+    {
+        "state": "Illinois",
+        "covid_d": 165294.0,
+        "pneum_d": 199762.0
+    },
+    {
+        "state": "Indiana",
+        "covid_d": 115748.0,
+        "pneum_d": 141273.0
+    },
+    {
+        "state": "Iowa",
+        "covid_d": 47438.0,
+        "pneum_d": 50449.0
+    },
+    {
+        "state": "Kansas",
+        "covid_d": 43098.0,
+        "pneum_d": 47150.0
+    },
+    {
+        "state": "Kentucky",
+        "covid_d": 89406.0,
+        "pneum_d": 119494.0
+    },
+    {
+        "state": "Louisiana",
+        "covid_d": 74330.0,
+        "pneum_d": 75102.0
+    },
+    {
+        "state": "Maine",
+        "covid_d": 14372.0,
+        "pneum_d": 23159.0
+    },
+    {
+        "state": "Maryland",
+        "covid_d": 79284.0,
+        "pneum_d": 95930.0
+    },
+    {
+        "state": "Massachusetts",
+        "covid_d": 92424.0,
+        "pneum_d": 107260.0
+    },
+    {
+        "state": "Michigan",
+        "covid_d": 159549.0,
+        "pneum_d": 182081.0
+    },
+    {
+        "state": "Minnesota",
+        "covid_d": 67626.0,
+        "pneum_d": 75213.0
+    },
+    {
+        "state": "Mississippi",
+        "covid_d": 64214.0,
+        "pneum_d": 77436.0
+    },
+    {
+        "state": "Missouri",
+        "covid_d": 100248.0,
+        "pneum_d": 116830.0
+    },
+    {
+        "state": "Montana",
+        "covid_d": 16338.0,
+        "pneum_d": 18034.0
+    },
+    {
+        "state": "Nebraska",
+        "covid_d": 24937.0,
+        "pneum_d": 31310.0
+    },
+    {
+        "state": "Nevada",
+        "covid_d": 51137.0,
+        "pneum_d": 73906.0
+    },
+    {
+        "state": "New Hampshire",
+        "covid_d": 13293.0,
+        "pneum_d": 17162.0
+    },
+    {
+        "state": "New Jersey",
+        "covid_d": 153632.0,
+        "pneum_d": 150701.0
+    },
+    {
+        "state": "New Mexico",
+        "covid_d": 38035.0,
+        "pneum_d": 43178.0
+    },
+    {
+        "state": "New York",
+        "covid_d": 182504.0,
+        "pneum_d": 229275.0
+    },
+    {
+        "state": "New York City",
+        "covid_d": 158246.0,
+        "pneum_d": 138712.0
+    },
+    {
+        "state": "North Carolina",
+        "covid_d": 149822.0,
+        "pneum_d": 197135.0
+    },
+    {
+        "state": "North Dakota",
+        "covid_d": 12454.0,
+        "pneum_d": 16127.0
+    },
+    {
+        "state": "Ohio",
+        "covid_d": 213084.0,
+        "pneum_d": 223353.0
+    },
+    {
+        "state": "Oklahoma",
+        "covid_d": 79617.0,
+        "pneum_d": 95898.0
+    },
+    {
+        "state": "Oregon",
+        "covid_d": 40720.0,
+        "pneum_d": 49169.0
+    },
+    {
+        "state": "Pennsylvania",
+        "covid_d": 228438.0,
+        "pneum_d": 233179.0
+    },
+    {
+        "state": "Puerto Rico",
+        "covid_d": 28647.0,
+        "pneum_d": 98344.0
+    },
+    {
+        "state": "Rhode Island",
+        "covid_d": 16645.0,
+        "pneum_d": 15968.0
+    },
+    {
+        "state": "South Carolina",
+        "covid_d": 89146.0,
+        "pneum_d": 94266.0
+    },
+    {
+        "state": "South Dakota",
+        "covid_d": 14318.0,
+        "pneum_d": 17662.0
+    },
+    {
+        "state": "Tennessee",
+        "covid_d": 130390.0,
+        "pneum_d": 169179.0
+    },
+    {
+        "state": "Texas",
+        "covid_d": 435809.0,
+        "pneum_d": 508475.0
+    },
+    {
+        "state": "Utah",
+        "covid_d": 24588.0,
+        "pneum_d": 32097.0
+    },
+    {
+        "state": "Vermont",
+        "covid_d": 4012.0,
+        "pneum_d": 6449.0
+    },
+    {
+        "state": "Virginia",
+        "covid_d": 101433.0,
+        "pneum_d": 107639.0
+    },
+    {
+        "state": "Washington",
+        "covid_d": 66338.0,
+        "pneum_d": 101878.0
+    },
+    {
+        "state": "West Virginia",
+        "covid_d": 35764.0,
+        "pneum_d": 55153.0
+    },
+    {
+        "state": "Wisconsin",
+        "covid_d": 73860.0,
+        "pneum_d": 74909.0
+    },
+    {
+        "state": "Wyoming",
+        "covid_d": 7390.0,
+        "pneum_d": 8103.0
+    }
+]
