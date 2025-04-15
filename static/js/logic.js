@@ -1,4 +1,4 @@
-fetch('./mental_data.json') 
+fetch('./data/json/mental_data.json') 
 .then(response => response.json())  
 .then(function(data) {
   // filtering the data
