@@ -1,75 +1,49 @@
-// organize the mental health data
-let AgeGroups = [
-  "18 - 29 years", "30 - 39 years", "40 - 49 years", "50 - 59 years", "60 - 69 years", 
-  "70 - 79 years", "80 years and above"
-];
+d3.json("mental_data.json").then(function(data) {
+  // filtering the data
+  let filteredData = data.filter(d =>
+    d.indicator === "Symptoms of Anxiety Disorder or Depressive Disorder" &&
+    d.group === "By Age"
+  );
 
-let MentalValues = [
-  47.84, 39.28, 34.90, 31.29, 24.65, 18.45, 17.26
-];
+  // adding the age groups
+  const AgeGroups = Array.from(new Set(filteredData.map(d => d.subgroup)));
 
-// build chart from the age group
-function buildBarChart(selectedAgeGroup) {
-  const ageGroupIndex = AgeGroups.indexOf(selectedAgeGroup);
-  if (ageGroupIndex === -1) return; 
-
-  // match the values with the age groups
-  const selectedValue = MentalValues[ageGroupIndex];
-
-  // add the data to the bar and format it
-  let barOutline = {
-    x: [selectedAgeGroup], 
-    y: [selectedValue],  
-    type: "bar",
-    orientation: "v",
-    marker: {
-      color: 'lightpink' 
-    }
-  };
-
-  let barDetails = {
-    title: `Average Mental Health Disorder Scores ${selectedAgeGroup}`,
-    margin: { t: 40, l: 70 },
-    xaxis: {
-      title: "Age Group",
-      tickvals: AgeGroups, 
-    },
-    yaxis: { 
-      title: "Axiety or Depressive Disorder Score",
-      range: [0, 100] 
-    },
-    bargap: 0.1, 
-    bargroupgap: 0.1 
-  };
-
-  // render the Bar Chart
-  Plotly.newPlot("bar", [barOutline], barDetails);
-}
-
-// populate the dropdown
-function populateDropdown() {
-  let dropdown = d3.select("#ageGroupDropdown");
-
-  AgeGroups.forEach((ageGroup) => {
-    dropdown.append("option")
-      .text(ageGroup)
-      .property("value", ageGroup);
+  // adding data to the drop
+  const dropdown = d3.select("#ageGroupDropdown");
+  AgeGroups.forEach(age => {
+    dropdown.append("option").text(age).property("value", age);
   });
 
-  // update the chart according to the dropdown
+  // building bar chart
+  function buildBarChart(selectedAgeGroup) {
+    // filtering data
+    const ageData = filteredData
+      .filter(d => d.subgroup === selectedAgeGroup)
+      .sort((a, b) => new Date(a.time_start) - new Date(b.time_start));
+
+    const trace = {
+      x: ageData.map(d => d.time_start),
+      y: ageData.map(d => d.value),
+      type: "bar",
+      marker: { color: "skyblue" }
+    };
+
+    const layout = {
+      title: `Anxiety/Depression Scores Over Time: ${selectedAgeGroup}`,
+      xaxis: { title: "Date", tickangle: -45 },
+      yaxis: { title: "Symptom Score", range: [0, 100] },
+      margin: { t: 50, l: 60 }
+    };
+
+    Plotly.newPlot("bar", [trace], layout);
+  }
+
+  // dropdown adjustments
   dropdown.on("change", function() {
-    const selectedAgeGroup = d3.select(this).property("value");
-    buildBarChart(selectedAgeGroup); 
+    const selected = d3.select(this).property("value");
+    buildBarChart(selected);
   });
 
-  // initialize the chart with the first option in the dropdown
-  buildBarChart(AgeGroups[0]); 
-}
-
-// Iiitialize the page with the dropdown
-populateDropdown();
-
-
-
-
-  
+  // loading the data into the chart
+  buildBarChart(AgeGroups[0]);
+});
