@@ -136,9 +136,9 @@
             chartTitleYear = year;
         }
       let lineLayout = {
-        title: "Deaths Per " + rx + ", " + state + ", " + chartTitleYear,
-        xaxis: {title:rx},
-        yaxis: {title: "Deaths"},
+        title: {text: "Deaths Per " + rx + ", " + state + ", " + chartTitleYear},
+        xaxis: {title: {text:rx}},
+        yaxis: {title: {text:"Deaths"}},
         showlegend: true
       }
   
