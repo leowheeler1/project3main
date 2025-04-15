@@ -1,4 +1,6 @@
-d3.json("mental_data.json").then(function(data) {
+fetch('./mental_data.json') 
+.then(response => response.json())  
+.then(function(data) {
   // filtering the data
   let filteredData = data.filter(d =>
     d.indicator === "Symptoms of Anxiety Disorder or Depressive Disorder" &&
@@ -29,9 +31,13 @@ d3.json("mental_data.json").then(function(data) {
     };
 
     const layout = {
-      title: `Anxiety/Depression Scores Over Time: ${selectedAgeGroup}`,
-      xaxis: { title: "Date", tickangle: -45 },
-      yaxis: { title: "Symptom Score", range: [0, 100] },
+      title: { text: `Anxiety/Depression Scores Over Time: ${selectedAgeGroup}` },
+      xaxis: { title: 
+        { text: "Date"}, 
+        tickangle: -45 },
+      yaxis: { title: 
+        { text: "Symptom Score"}, 
+        range: [0, 100] },
       margin: { t: 50, l: 60 }
     };
 
