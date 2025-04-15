@@ -69,17 +69,43 @@
         <div id="bubble"></div>
       </div>
     </div>
-    <div id="deathBar">
+    <div class="container">
+
+    <div class="row">
+      <div class="col-md-12 p-5 text-center bg-light">
+        <h1>Anxiety or Depressive Disorder Score by Age Group (2020-2024)</h1>
+        <p>Use the "Age Group" dropdown below to explore the dataset.</p>
+      </div>
+      <div class="mt-3 text-muted small text-center">
+        <p><strong>Note:</strong> The following data is from an online survey conducted by the National Center for Health Statistics. This survey was intended to obtain information on the frequency of anxiety and depression among different demographic groups. The "Symptom Score" value represents how frequently a participant experienced anxiety or depression symptoms within a 7-day period.</p>
+      </div>
     </div>
-    <div id="covidBar">
+    <div class="row mt-4">
+      <div class="col-md-3">
+        <div class="card card-body bg-light">
+          <h6>Age Group</h6>
+          <select id="ageGroupDropdown" onchange="updateChart()" class="form-select"></select>
+        </div>
+      </div>
+      <div class="col-md-9 d-flex justify-content-center align-items-center">
+        <div id="bar" style="width: 100%; max-width: 700px;"></div>
+      </div>
     </div>
-    <div id="highDeathBar">
+    <div class="container">
+      <div id="deathBar">
+      </div>
+      <div id="covidBar">
+      </div>
+     <div id="highDeathBar">
+     </div>
     </div>
-  </div>
+   </div>
 
 
   
   <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
+  <script src="./static/js/logic.js"></script>
   <script src="./static/js/app7.js"></script>
   <script src="./static/js/death_total_bar.js"></script>
 </body>
