@@ -33,7 +33,6 @@
   - National Center for Health Statistics. U.S. Census Bureau, Household Pulse Survey, 2020–2024. Anxiety and Depression. Generated interactively: April 7, 2025
         - https://www.cdc.gov/nchs/covid19/pulse/mental-health.htm
 
-## References (Code)
 
 ## Other References
   - CDC Data Guidelines
