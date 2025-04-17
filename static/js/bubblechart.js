@@ -1,14 +1,25 @@
 // bubblechart.js
 
+let mentalData = [];
+let covidData = [];
+let covidUS = [];
+
 
 async function loadAndPlotData() {
     const mentalRes = await fetch('./data/json/mental_data.json');
     const covidRes = await fetch('./data/json/covid_data.json');
 
-    const mentalData = await mentalRes.json();
-    const covidData = await covidRes.json();
+    mentalData = await mentalRes.json();
+    covidData = await covidRes.json();
+    covidUS = covidData.filter(d => d.state === "United States");
 
-    const covidUS = covidData.filter(d => d.state === "United States");
+    applyFilters();
+}
+
+
+function applyFilters() {
+    const selectedGroup = document.getElementById("group-select").value;
+    const selectedYear = document.getElementById("year-select").value;
 
     const yearToSymbol = {
         "2020": "circle",
@@ -17,13 +28,18 @@ async function loadAndPlotData() {
         "2023": "triangle-up",
         "2024": "star"
     };
-    
-    const points = mentalData
-    .filter(d => d.indicator.includes("Depressive Disorder"))
-    .map(mental => {
+
+    const filtered = mentalData.filter(d => {
+        const matchIndicator = d.indicator.includes("Depressive Disorder");
+        const matchGroup = selectedGroup === "All" || d.group === selectedGroup;
+        const matchYear = selectedYear === "All" || new Date(d.time_start).getFullYear() === parseInt(selectedYear);
+        return matchIndicator && matchGroup && matchYear;
+    });
+
+    const points = filtered.map(mental => {
         const start = new Date(mental.time_start);
-        const year = start.getFullYear();
         const end = new Date(mental.time_end);
+        const year = start.getFullYear();
 
         const covidMatches = covidUS.filter(entry => {
             const week = new Date(entry.week_start);
@@ -41,7 +57,6 @@ async function loadAndPlotData() {
         };
     });
 
-
     const trace = {
         x: points.map(p => p.x),
         y: points.map(p => p.y),
@@ -51,39 +66,32 @@ async function loadAndPlotData() {
         marker: {
             size: points.map(p => p.size),
             color: points.map(p => p.x),
-            symbol: points.map(p => p.symbol),  
+            symbol: points.map(p => p.symbol),
             colorscale: 'Viridis',
             showscale: true
         }
     };
-    
 
     const layout = {
         title: {
-            text: 'Depressive Symptoms vs COVID Deaths (2020–2024)',
-            font: {
-                size: 24
-            }
+            text: `Depressive Symptoms vs COVID Deaths (${selectedGroup}, ${selectedYear})`,
+            font: { size: 24 }
         },
         xaxis: {
             title: {
                 text: 'Depressive Symptoms (%)',
-                font: {
-                    size: 16
-                }
+                font: { size: 16 }
             }
         },
         yaxis: {
             title: {
                 text: 'COVID Deaths (During Survey Window)',
-                font: {
-                    size: 16
-                }
+                font: { size: 16 }
             }
         }
     };
 
-    Plotly.newPlot('unified-chart', [trace], layout);
+    Plotly.newPlot('unified-chart', [trace], layout, { responsive: true });
 }
 
 loadAndPlotData();
