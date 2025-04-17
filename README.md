@@ -51,4 +51,4 @@
     - Leo Wheeler (Preprocessing data & connecting SQL to Javascript)
     - Jacob Brown (Interactive visualization of COVID dataset)
     - Liliana Guevara-Guerrero  (Interactive visualization of Mental Health dataset)
-    - Connor Beaton (General assistance, Proposal & README.md)
+    - Connor Beaton (General assistance, Interactive Bubble Chart, Proposal & README.md)
