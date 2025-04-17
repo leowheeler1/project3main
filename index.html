@@ -12,7 +12,6 @@
 </head>
 
 <body style="background-color:#f5f5f5;">
-
   <div class="container">
     <div class="row">
       <div class="col-md-12 p-5 text-center bg-light">
@@ -20,7 +19,7 @@
         <p><a href="https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Week-Ending-D/r8kw-7aab/data_preview" target="_blank" rel="noopener noreferrer">CDC Covid Data</a></p>
         <p><a href="https://www.cdc.gov/nchs/covid19/pulse/mental-health.htm" target="_blank" rel="noopener noreferrer">CDC Mental Health Data</a></p>
       </div>
-            <h2 style="text-align: center">COVID-19 Deaths Across U.S. States</h2>
+      <h2 style="text-align: center">COVID-19 Deaths Across U.S. States</h2>
     </div>
     <br>
     <div class="row">
@@ -44,27 +43,33 @@
             <label><input type="checkbox" id="flu" onchange="displayChanged()"> Influenza</label><br>
             <label><input type="checkbox" id="either" onchange="displayChanged()"> Pneomonia, Influenza or COVID-19</label>
           </form>
+         
+          <form><br>
+            <h6>Report By:</h6>
+         
+       
+            <label>
+              <input type="radio" name="reporttype" value="Month" onchange="rxChanged(this.value)" >
+              Month
+            </label><br>
+      
+            <label>
+              <input type="radio" name="reporttype" value="Week" onchange="rxChanged(this.value)" checked>
+              Week
+            </label><br>
+          </form>
+     
         </div>  
       </div>
       <div class="col-md-9">
         <div id="line-chart"></div>
-           <p><strong>Note:</strong> Data from the Centers for Disease Control and Prevention (CDC) may have a reporting lag of up to 8 weeks. This lag explains the apparent drop-off in reported data for 2025 as the recent figures have not yet been fully captured or finalized. </p>
-      </div>
-    
-    <form>
-      <p>Report By:</p>
-   
- 
-      <label>
-        <input type="radio" name="reporttype" value="Month" onchange="rxChanged(this.value)" >
-        Month
-      </label><br>
 
-      <label>
-        <input type="radio" name="reporttype" value="Week" onchange="rxChanged(this.value)" checked>
-        Week
-      </label><br>
-    </form>
+            <p><strong>Note:</strong> Data from the Centers for Disease Control and Prevention (CDC) may have a reporting lag of up to 8 weeks. This lag explains the apparent drop-off in reported data for 2025 as the recent figures have not yet been fully captured or finalized. </p>
+
+        </div>
+
+    
+
     </div>
     <div class="row" style="margin-bottom: 20px;">
       <div class="col-md-12">
