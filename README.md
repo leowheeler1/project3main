@@ -19,7 +19,7 @@
       - How do the areas most impacted by COVID cases and anxiety/depression compare?
   - We decided to use an API to call for the initial data from the CDC. That data went through a cleaning process and was then converted  into a .csv file, which was then loaded into a PostgresQL database. Github Pages was leveraged to host the interactive visualizations that resulted from our study. Javascript as well as HTML/CSS were used to run these visualizations. Psycopg2 was used to take information from PostgresQL into Python to further refine into JSON objects for our interactive visualizations. Last but not least we used D3 and Plotly to further increase the power of our visualizations.
 
-## [Instructions](https://leowheeler1.github.io/project3main/) <-- Interactive Viz Here
+## Instructions -- [Interactive Viz Here](https://leowheeler1.github.io/project3main/)
   - The link above goes to the github pages deployment for all the visualizations produced during our study. Below are instructions on how to use each plot on the deployment and what they tell you.
   - Plot 1 instructions: This visualization displays deaths for COVID-19, pneumonia, influenza as well as total deaths per state and per year, reported either weekly or monthly.  Simply select the “State,” “Year,” “Death Type,” and “Report By” options you are interested in.  The graph will update automatically to display      the data you are interested in.
     ![Plot 1](images/graph1.gif) 
