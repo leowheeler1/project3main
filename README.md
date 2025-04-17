@@ -12,9 +12,9 @@
 ## [Instructions](https://leowheeler1.github.io/project3main/) <-- Interactive Viz Here
   - The link above goes to the github pages deployment for all the visualizations produced during our study. Below are instructions on how to use each plot on the deployment and what they tell you.
   - Plot 1 instructions:
-    ![]() 
+    ![Plot 1](images/graph1.gif) 
   - Plot 2 instructions:
-    ![]()
+    ![Plot 2](images/graph2.gif)
   - Plot 3+4 instructions: these ones are static, nothing to worry about except reading them. The first one shows the three states (and one city) that had more deaths from Covid-19 than Pneumonia between 2020-2025. The second one shows the three highest death counts among all states, cities, and territories in the dataset.  
     ![Plots 3 and 4](images/graph3&4.png) 
   - Plot 5 instructions:
