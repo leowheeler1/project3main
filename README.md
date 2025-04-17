@@ -1,4 +1,4 @@
-# project3main
+# COVID-19 and Mental Health Data Project
 
 ## Repo Directory
 #### [1. Data](data) - `.csv` files that were used to populate relational database and `.json` files that were used for plotting
