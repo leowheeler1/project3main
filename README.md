@@ -11,7 +11,7 @@
 
 ## [Instructions](https://leowheeler1.github.io/project3main/) <-- Interactive Viz Here
   - The link above goes to the github pages deployment for all the visualizations produced during our study. Below are instructions on how to use each plot on the deployment and what they tell you.
-  - Plot 1 instructions:
+  - Plot 1 instructions: This visualization displays deaths for COVID-19, pneumonia, influenza as well as total deaths per state and per year, reported either weekly or monthly.  Simply select the “State,” “Year,” “Death Type,” and “Report By” options you are interested in.  The graph will update automatically to display      the data you are interested in.
     ![Plot 1](images/graph1.gif) 
   - Plot 2 instructions:
     ![Plot 2](images/graph2.gif)
