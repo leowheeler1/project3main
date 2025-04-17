@@ -1,5 +1,15 @@
 # project3main
 
+## Repo Directory
+#### [1. Data](data) `.csv` files that were used to populate relational database and `.json` files that were used for plotting
+#### [2. Images](images) all images and gifs used in readme
+#### [3. Schema](schema) setup for the relational database
+#### [4. Static/js](static/js) `.js` files that power the visualizations
+#### [5. README.md](README.md) you are here ;)
+#### [6. `cleanup.ipynb`](cleanup.ipynb) inital API call and conversion to `.csv`
+#### [7. `index.html`](index.html) HTML page to support visualizations
+#### [8. `psycopg2.ipynb`](psycopg2.ipynb) (Locally) calling data from relational database and converting the output to a json object for use with graphing
+
 ## Project Overview
   - For this project we wanted to synthesize COVID-19 data and Mental Health data to see what kind of correlations, if any, we could find. Some of the questions we sought to answer were:
       - What states saw the most COVID cases?
