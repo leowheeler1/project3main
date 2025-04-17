@@ -18,7 +18,7 @@
   - Plot 3+4 instructions: these ones are static, nothing to worry about except reading them. The first one shows the three states (and one city) that had more deaths from Covid-19 than Pneumonia between 2020-2025. The second one shows the three highest death counts among all states, cities, and territories in the dataset.  
     ![Plots 3 and 4](images/graph3&4.png) 
   - Plot 5 instructions:
-    ![]()
+    ![Plot 5](images/graph5.gif)
 ## Ethical Considerations
   - For this project, we used data from the CDC. We ourselves are not interfering with any end user licensing agreements nor are we stealing data that we should not have access to. This data has been sourced ethically from public spaces and is being used for educational purposes. 
   - Additionally notable are the CDC Guidelines for Data Sharing and Collections, cited in Other References. The CDC follows ten principles that bolster 5 standards to keep their data practices sharp and up to code. They are:
