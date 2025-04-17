@@ -37,7 +37,7 @@ fetch('./data/json/high_death.json')
 
         let data1 = [trace1, trace2];
 
-        Plotly.newPlot('highDeathBar', data1, layout, {staticPlot: true});
+        Plotly.newPlot('highDeathBar', data1, layout, {staticPlot: false});
     })
     .catch(error => console.error('Error loading data: ', error))
 
@@ -82,6 +82,6 @@ fetch('./data/json/high_death.json')
 
         let data1 = [trace1, trace2];
 
-        Plotly.newPlot('covidBar', data1, layout, {staticPlot: true});
+        Plotly.newPlot('covidBar', data1, layout, {staticPlot: false});
     })
     .catch(error => console.error('Error loading data: ', error))
