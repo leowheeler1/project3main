@@ -15,9 +15,9 @@
     ![Plot 1](images/graph1.gif) 
   - Plot 2 instructions:
     ![Plot 2](images/graph2.gif)
-  - Plot 3+4 instructions: these ones are static, nothing to worry about except reading them. The first one shows the three states (and one city) that had more deaths from Covid-19 than Pneumonia between 2020-2025. The second one shows the three highest death counts among all states, cities, and territories in the dataset.  
+  - Plot 3+4 instructions: These ones are static, nothing to worry about except reading them. The first one shows the three states (and one city) that had more deaths from Covid-19 than Pneumonia between 2020-2025. The second one shows the three highest death counts among all states, cities, and territories in the dataset.  
     ![Plots 3 and 4](images/graph3&4.png) 
-  - Plot 5 instructions:
+  - Plot 5 instructions: This graph aggregates deaths during given survey windows and plots that against depression scores. The heatmap goes along the x axis, and there are varying shapes for different years. To use this graphic, please choose the demographic and year from the dropdown window. The tooltip from top to bottom left to right gives depression score, deaths in window, demographic, and survey window time.
     ![Plot 5](images/graph5.gif)
 ## Ethical Considerations
   - For this project, we used data from the CDC. We ourselves are not interfering with any end user licensing agreements nor are we stealing data that we should not have access to. This data has been sourced ethically from public spaces and is being used for educational purposes. 
